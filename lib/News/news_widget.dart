@@ -36,7 +36,7 @@ class NewsWidget extends StatelessWidget {
                 image: DecorationImage(
                     fit: BoxFit.cover,
                     image: AssetImage(
-                      "assets/images/news_thumbnail_large.png",
+                      "assets/images/incubator.jpg",
                     )),
                 borderRadius: BorderRadius.all(Radius.circular(6))),
           ),

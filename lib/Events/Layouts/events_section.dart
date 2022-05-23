@@ -1,31 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:pro8_tech/components/simple_button.dart';
-import 'package:pro8_tech/utils/responsiveLayout.dart';
 
-class HeroSection extends StatelessWidget {
-  const HeroSection({Key? key}) : super(key: key);
+class EventsSection extends StatelessWidget {
+  const EventsSection({Key? key}) : super(key: key);
 
-  @override
-  Widget build(BuildContext context) {
-    return ResponsiveLayout(
-      largeScreen: _LargeChild(),
-      smallScreen: _SmallChild(),
-      mediumScreen: _MediumChild(),
-    );
-  }
-}
-
-class _LargeChild extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: MediaQuery.of(context).size.height * 0.88,
-      width: double.infinity,
+      height: 600,
       decoration: BoxDecoration(
           image: DecorationImage(
         fit: BoxFit.cover,
-        image: AssetImage("assets/images/header_2.jpg"),
+        image: AssetImage("assets/images/field.jpg"),
       )),
       child: Stack(children: [
         Positioned(
@@ -33,33 +20,33 @@ class _LargeChild extends StatelessWidget {
           top: 0,
           child: Container(
               padding:
-                  EdgeInsets.only(top: 150, bottom: 150, left: 100, right: 250),
+                  EdgeInsets.only(top: 150, bottom: 150, left: 150, right: 250),
               alignment: Alignment.center,
               height: MediaQuery.of(context).size.height * 0.88,
               width: MediaQuery.of(context).size.width * 0.6,
-              color: Colors.black.withOpacity(0.7),
+              color: Colors.black.withOpacity(0.6),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    "Agricultural tech rising...",
+                    "EVENTS",
                     style: GoogleFonts.ubuntu(
-                        fontSize: 32,
+                        fontSize: 64,
                         fontWeight: FontWeight.w700,
                         color: Colors.white),
                   ),
-                  SizedBox(height: 10),
+                  SizedBox(height: 20),
                   Text(
-                    "Pro8 is at the forefront of agricultural technology, pioneering solutions in poultry, horticulture and commercial crop farming. Remote monitoring, process automation, data collection and analysis. We are increasing agricultural efficiency, productivity and ease of management.",
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra ex a felis ultrices, suscipit consectetur tellus volutpat. Vivamus convallis sodales elit, sit amet lacinia turpis venenatis nec. Nullam vel convallis orci. ",
                     style: GoogleFonts.ubuntu(
                         fontSize: 18,
                         fontWeight: FontWeight.w100,
                         color: Colors.white),
                   ),
-                  SizedBox(height: 20),
+                  SizedBox(height: 16),
                   SimpleButton(
-                    text: "Learn More",
+                    text: "See all upcoming events",
                     shadowColor: Colors.transparent,
                     buttonColor2: Color.fromARGB(255, 3, 114, 105),
                     buttonColor1: Color.fromARGB(255, 30, 235, 47),
@@ -69,19 +56,5 @@ class _LargeChild extends StatelessWidget {
         ),
       ]),
     );
-  }
-}
-
-class _MediumChild extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Container();
-  }
-}
-
-class _SmallChild extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Container();
   }
 }

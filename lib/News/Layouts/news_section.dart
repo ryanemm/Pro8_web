@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:pro8_tech/News/news_widget.dart';
 import 'package:pro8_tech/components/simple_button.dart';
-import 'package:pro8_tech/news_widget.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 
 class NewsSection extends StatefulWidget {
