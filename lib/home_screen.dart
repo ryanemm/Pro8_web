@@ -71,7 +71,7 @@ class SmallScreen extends StatelessWidget {
               children: [
                 DrawerHeader(
                     decoration: BoxDecoration(color: Colors.grey[900]),
-                    padding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+                    padding: EdgeInsets.symmetric(vertical: 16, horizontal: 16),
                     child: Image.asset("assets/images/PRIM_logo.png")),
                 ListTile(
                   title: Text(
