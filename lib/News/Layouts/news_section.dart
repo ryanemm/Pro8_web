@@ -33,7 +33,7 @@ class _NewsSectionState extends State<NewsSection> {
                   SizedBox(height: 24),
                   CarouselSlider(
                     items: [
-                      NewsWidget(
+                      /*NewsWidget(
                         title: "Auto Ignition Gas Incubators",
                         date: "13 April 2022",
                         summary:
@@ -56,7 +56,7 @@ class _NewsSectionState extends State<NewsSection> {
                         date: "13 April 2022",
                         summary:
                             "An automated system that automatically ignites the gas backup system in the event of a powercut with no human intervention",
-                      ),
+                      ),*/
                     ],
                     options: CarouselOptions(
                       // height: 500,

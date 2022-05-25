@@ -3,8 +3,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:pro8_tech/components/simple_button.dart';
 import 'package:pro8_tech/utils/responsiveLayout.dart';
 
-class InnovationsSection extends StatelessWidget {
-  const InnovationsSection({Key? key}) : super(key: key);
+class DesktopInnovationsSection extends StatelessWidget {
+  const DesktopInnovationsSection({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

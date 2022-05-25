@@ -19,7 +19,7 @@ class MobileHeroSection extends StatelessWidget {
           alignment: Alignment.center,
           color: Colors.black.withOpacity(0.7),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
@@ -33,9 +33,11 @@ class MobileHeroSection extends StatelessWidget {
               Text(
                 "Pro8 is at the forefront of agricultural technology, pioneering solutions in poultry, horticulture and commercial crop farming. Remote monitoring, process automation, data collection and analysis. We are increasing agricultural efficiency, productivity and ease of management.",
                 style: GoogleFonts.ubuntu(
-                    fontSize: 14,
-                    fontWeight: FontWeight.w100,
-                    color: Colors.white),
+                  fontSize: 14,
+                  fontWeight: FontWeight.w100,
+                  color: Colors.white,
+                ),
+                textAlign: TextAlign.center,
               ),
               SizedBox(height: 20),
               SimpleButton(
