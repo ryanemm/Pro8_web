@@ -8,7 +8,8 @@ import 'package:pro8_tech/Hero/Layouts/desktop_hero.dart';
 import 'package:pro8_tech/Hero/Layouts/desktop_hero.dart';
 import 'package:pro8_tech/Hero/hero_section.dart';
 import 'package:pro8_tech/Innovations/Layouts/innovations_section.dart';
-import 'package:pro8_tech/Vision/Layouts/vision_section.dart';
+import 'package:pro8_tech/Vision/vision_section.dart';
+import 'package:pro8_tech/Vision/vision_section.dart';
 import 'package:pro8_tech/WIdgets/navbar.dart';
 import 'package:pro8_tech/footer_section.dart';
 import 'package:pro8_tech/utils/responsiveLayout.dart';
@@ -228,7 +229,7 @@ class LargeScreen extends StatelessWidget {
           thumbVisibility: true,
           //showTrackOnHover: true,
           child: ListView.builder(
-            itemCount: 8,
+            itemCount: 7,
             itemBuilder: (BuildContext context, int index) {
               return sectionsDesktop.elementAt(index);
             },

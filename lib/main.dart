@@ -5,7 +5,7 @@ import 'package:pro8_tech/Hero/Layouts/desktop_hero.dart';
 import 'package:pro8_tech/Hero/hero_section.dart';
 import 'package:pro8_tech/Innovations/Layouts/innovations_section.dart';
 import 'package:pro8_tech/News/Layouts/news_section.dart';
-import 'package:pro8_tech/Vision/Layouts/vision_section.dart';
+import 'package:pro8_tech/Vision/vision_section.dart';
 import 'package:pro8_tech/WIdgets/navbar.dart';
 import 'package:pro8_tech/footer_section.dart';
 import 'package:pro8_tech/home_screen.dart';

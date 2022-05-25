@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class VisionSection extends StatelessWidget {
-  const VisionSection({Key? key}) : super(key: key);
+class DesktopVisionSection extends StatelessWidget {
+  const DesktopVisionSection({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
