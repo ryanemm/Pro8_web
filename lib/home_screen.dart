@@ -2,7 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:pro8_tech/Contact/Layouts/contact_section.dart';
+import 'package:pro8_tech/Contact/contact_section.dart';
 import 'package:pro8_tech/Events/events_section.dart';
 import 'package:pro8_tech/Hero/Layouts/desktop_hero.dart';
 import 'package:pro8_tech/Hero/Layouts/desktop_hero.dart';

@@ -3,8 +3,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:pro8_tech/components/simple_button.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class ContactSection extends StatelessWidget {
-  const ContactSection({Key? key}) : super(key: key);
+class DesktopContactSection extends StatelessWidget {
+  const DesktopContactSection({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
