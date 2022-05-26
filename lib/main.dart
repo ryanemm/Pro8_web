@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:pro8_tech/Contact/Layouts/contact_section.dart';
-import 'package:pro8_tech/Events/Layouts/events_section.dart';
+import 'package:pro8_tech/Events/events_section.dart';
 import 'package:pro8_tech/Hero/Layouts/desktop_hero.dart';
 import 'package:pro8_tech/Hero/hero_section.dart';
 import 'package:pro8_tech/Innovations/innovations_section.dart';
-import 'package:pro8_tech/News/Layouts/news_section.dart';
+import 'package:pro8_tech/Testimonials/testimonials_section.dart';
 import 'package:pro8_tech/Vision/vision_section.dart';
 import 'package:pro8_tech/WIdgets/navbar.dart';
 import 'package:pro8_tech/footer_section.dart';

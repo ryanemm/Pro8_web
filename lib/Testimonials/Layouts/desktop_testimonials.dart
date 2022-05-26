@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:pro8_tech/News/news_widget.dart';
 import 'package:pro8_tech/components/simple_button.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 
-class NewsSection extends StatefulWidget {
+class DesktopTestimonialsSection extends StatefulWidget {
   @override
-  _NewsSectionState createState() => _NewsSectionState();
+  _DesktopTestimonialsSectionState createState() =>
+      _DesktopTestimonialsSectionState();
 }
 
-class _NewsSectionState extends State<NewsSection> {
+class _DesktopTestimonialsSectionState
+    extends State<DesktopTestimonialsSection> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -23,7 +24,7 @@ class _NewsSectionState extends State<NewsSection> {
               Column(
                 children: [
                   Text(
-                    "NEW TECH",
+                    "CLIENT TESTIMONIALS",
                     style: GoogleFonts.ubuntu(
                       fontSize: 64,
                       fontWeight: FontWeight.w500,
@@ -31,45 +32,6 @@ class _NewsSectionState extends State<NewsSection> {
                     ),
                   ),
                   SizedBox(height: 24),
-                  CarouselSlider(
-                    items: [
-                      /*NewsWidget(
-                        title: "Auto Ignition Gas Incubators",
-                        date: "13 April 2022",
-                        summary:
-                            "An automated system that automatically ignites the gas backup system in the event of a powercut with no human intervention",
-                      ),
-                      NewsWidget(
-                        title: "Auto Ignition Gas Incubators",
-                        date: "13 April 2022",
-                        summary:
-                            "An automated system that automatically ignites the gas backup system in the event of a powercut with no human intervention",
-                      ),
-                      NewsWidget(
-                        title: "Auto Ignition Gas Incubators",
-                        date: "13 April 2022",
-                        summary:
-                            "An automated system that automatically ignites the gas backup system in the event of a powercut with no human intervention",
-                      ),
-                      NewsWidget(
-                        title: "Auto Ignition Gas Incubators",
-                        date: "13 April 2022",
-                        summary:
-                            "An automated system that automatically ignites the gas backup system in the event of a powercut with no human intervention",
-                      ),*/
-                    ],
-                    options: CarouselOptions(
-                      // height: 500,
-                      viewportFraction: 0.5,
-                      // aspectRatio: 1.0,
-                      enlargeCenterPage: true,
-                      autoPlay: true,
-                      autoPlayCurve: Curves.fastOutSlowIn,
-                      enableInfiniteScroll: true,
-                      autoPlayAnimationDuration: Duration(milliseconds: 1500),
-                    ),
-                    carouselController: CarouselController(),
-                  )
                 ],
               ),
               Positioned(

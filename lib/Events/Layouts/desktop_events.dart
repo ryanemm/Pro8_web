@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:pro8_tech/components/simple_button.dart';
 
-class EventsSection extends StatelessWidget {
-  const EventsSection({Key? key}) : super(key: key);
+class DesktopEventsSection extends StatelessWidget {
+  const DesktopEventsSection({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

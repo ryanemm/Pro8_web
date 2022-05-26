@@ -3,18 +3,19 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:pro8_tech/Contact/Layouts/contact_section.dart';
-import 'package:pro8_tech/Events/Layouts/events_section.dart';
+import 'package:pro8_tech/Events/events_section.dart';
 import 'package:pro8_tech/Hero/Layouts/desktop_hero.dart';
 import 'package:pro8_tech/Hero/Layouts/desktop_hero.dart';
 import 'package:pro8_tech/Hero/hero_section.dart';
 import 'package:pro8_tech/Innovations/innovations_section.dart';
+import 'package:pro8_tech/Testimonials/testimonials_section.dart';
 import 'package:pro8_tech/Vision/vision_section.dart';
 import 'package:pro8_tech/Vision/vision_section.dart';
 import 'package:pro8_tech/WIdgets/navbar.dart';
 import 'package:pro8_tech/footer_section.dart';
 import 'package:pro8_tech/utils/responsiveLayout.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
-import 'News/Layouts/news_section.dart';
+import 'Testimonials/testimonials_section.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -53,7 +54,7 @@ class SmallScreen extends StatelessWidget {
       HeroSection(),
       VisionSection(),
       InnovationsSection(),
-      NewsSection(),
+      TestimonialsSection(),
       EventsSection(),
       ContactSection(),
       Footer()
@@ -181,7 +182,7 @@ class MediumScreen extends StatelessWidget {
       HeroSection(),
       VisionSection(),
       InnovationsSection(),
-      NewsSection(),
+      TestimonialsSection(),
       EventsSection(),
       ContactSection(),
       Footer()
@@ -215,7 +216,7 @@ class LargeScreen extends StatelessWidget {
       HeroSection(),
       VisionSection(),
       InnovationsSection(),
-      NewsSection(),
+      TestimonialsSection(),
       EventsSection(),
       ContactSection(),
       Footer()

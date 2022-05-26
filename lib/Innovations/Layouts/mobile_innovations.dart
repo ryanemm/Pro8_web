@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:pro8_tech/News/news_widget.dart';
+import '../../Testimonials/news_widget.dart';
 
 class MobileInnovationsSection extends StatefulWidget {
   const MobileInnovationsSection({Key? key}) : super(key: key);
@@ -21,7 +21,7 @@ class _MobileInnovationsSectionsState extends State<MobileInnovationsSection> {
           Text(
             "INNOVATIONS",
             style: GoogleFonts.ubuntu(
-                fontSize: 32, fontWeight: FontWeight.w500, color: Colors.white),
+                fontSize: 32, fontWeight: FontWeight.w400, color: Colors.white),
           ),
           SizedBox(height: 16),
           RichText(
