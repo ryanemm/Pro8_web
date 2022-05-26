@@ -28,7 +28,7 @@ class _MobileInnovationsSectionsState extends State<MobileInnovationsSection> {
               textAlign: TextAlign.center,
               text: TextSpan(
                   style: GoogleFonts.ubuntu(
-                    fontSize: 14,
+                    fontSize: 16,
                     height: 1.5,
                     fontWeight: FontWeight.w100,
                     color: Colors.white,
@@ -37,7 +37,7 @@ class _MobileInnovationsSectionsState extends State<MobileInnovationsSection> {
                     TextSpan(
                       text: "Poultry: ",
                       style: GoogleFonts.ubuntu(
-                          fontSize: 14,
+                          fontSize: 16,
                           height: 1.5,
                           fontWeight: FontWeight.w500,
                           color: Colors.white),
@@ -53,14 +53,14 @@ class _MobileInnovationsSectionsState extends State<MobileInnovationsSection> {
                 "An automated system that automatically ignites the gas backup system in the event of a powercut with no human intervention",
             title: "Auto Ignition Gas Incubators",
             titleFontSize: 20,
-            textFontSize: 14,
+            textFontSize: 16,
           ),
           SizedBox(height: 32),
           RichText(
               textAlign: TextAlign.center,
               text: TextSpan(
                   style: GoogleFonts.ubuntu(
-                      fontSize: 14,
+                      fontSize: 16,
                       height: 1.5,
                       fontWeight: FontWeight.w100,
                       color: Colors.white),
@@ -68,7 +68,7 @@ class _MobileInnovationsSectionsState extends State<MobileInnovationsSection> {
                     TextSpan(
                       text: "Horticulture: ",
                       style: GoogleFonts.ubuntu(
-                          fontSize: 14,
+                          fontSize: 16,
                           height: 1.5,
                           fontWeight: FontWeight.w500,
                           color: Colors.white),

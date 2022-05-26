@@ -33,7 +33,7 @@ class MobileHeroSection extends StatelessWidget {
               Text(
                 "Pro8 is at the forefront of agricultural technology, pioneering solutions in poultry, horticulture and commercial crop farming. Remote monitoring, process automation, data collection and analysis. We are increasing agricultural efficiency, productivity and ease of management.",
                 style: GoogleFonts.ubuntu(
-                  fontSize: 14,
+                  fontSize: 16,
                   fontWeight: FontWeight.w100,
                   color: Colors.white,
                 ),

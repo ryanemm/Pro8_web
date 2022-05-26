@@ -22,8 +22,8 @@ class _MobileContactSectionState extends State<MobileContactSection> {
               "CONTACT",
               style: GoogleFonts.ubuntu(
                   fontSize: 32,
-                  fontWeight: FontWeight.w700,
-                  color: Colors.grey[900]),
+                  fontWeight: FontWeight.w600,
+                  color: Color.fromARGB(255, 3, 114, 105)),
             ),
             SizedBox(height: 24),
             Text(

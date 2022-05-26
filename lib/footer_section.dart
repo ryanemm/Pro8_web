@@ -46,7 +46,7 @@ class Footer extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              "© 2022 KOSI CONNECT - ALL RIGHTS RESERVED",
+              "© 2022 PRO8 INNOVETICS - ALL RIGHTS RESERVED",
               textAlign: TextAlign.center,
               style: GoogleFonts.nunito(
                   fontWeight: FontWeight.w300,

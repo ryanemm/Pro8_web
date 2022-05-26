@@ -23,7 +23,7 @@ class MobileVisionSection extends StatelessWidget {
           Text(
             "To bring luxury and productivity into farming and simplify manufacturing through automation and remote monitoring. To bring luxury and productivity into farming and simplify manufacturing through automation and remote monitoring. To bring luxury and productivity into farming and simplify manufacturing through automation and remote monitoring.",
             style: GoogleFonts.ubuntu(
-              fontSize: 14,
+              fontSize: 16,
               height: 1.5,
               fontWeight: FontWeight.w400,
             ),

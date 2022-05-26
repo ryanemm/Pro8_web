@@ -26,7 +26,7 @@ class MobileEventsSection extends StatelessWidget {
               Text(
                 "Tell us about any challenges you face on your farm and we will come up with an efficient solution to increase your productivity and make your processes easier",
                 style: GoogleFonts.ubuntu(
-                  fontSize: 18,
+                  fontSize: 16,
                   fontWeight: FontWeight.w100,
                   color: Colors.white,
                 ),

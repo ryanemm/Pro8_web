@@ -25,14 +25,18 @@ class _MobileNavBarState extends State<MobileNavBar> {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Image.asset("assets/images/PRIM_logo.png", height: 60),
-            SizedBox(width: 8),
-            /*Text(
-              "Pro8 Innovetics",
-              style: GoogleFonts.ubuntu(
-                fontSize: 16,
-              ),
-            ),*/
+            Row(
+              children: [
+                Image.asset("assets/images/PRIM_logo.png", height: 60),
+                SizedBox(width: 0),
+                Text(
+                  "Pro8 Innovetics",
+                  style: GoogleFonts.ubuntu(
+                    fontSize: 18,
+                  ),
+                ),
+              ],
+            ),
             Builder(builder: (context) {
               return GestureDetector(
                 onTap: () {
