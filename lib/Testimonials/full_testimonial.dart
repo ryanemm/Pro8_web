@@ -39,7 +39,7 @@ class FullTestimonial extends StatelessWidget {
           SizedBox(height: 10),
           Container(
             padding: EdgeInsets.symmetric(horizontal: 10),
-            height: 300,
+            // height: 300,
             child: Text(
               testimonial,
               textAlign: TextAlign.center,

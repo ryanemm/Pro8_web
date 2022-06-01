@@ -21,9 +21,9 @@ List<Testimonial> testimonials = [
       location: "Harare",
       image: "assets/images/cynthia.jpeg",
       testimonialPreview:
-          "My name is Cynthia Arumero. I have been a fan and user of Pro8 incubators since 2015. I started off my entrepreneurial journey with their machines starting off with a small...",
+          "I have been a fan and user of Pro8 incubators since 2015. I started off my entrepreneurial journey with their machines initially with a small incubator that carried around...",
       testimonialFull:
-          "My name is Cynthia Arumero. I have been a fan and user of Pro8 incubators since 2015. I started off my entrepreneurial journey with their machines starting off with a small incubator that carried around 120 chicken eggs. With a boom in business I bought a bigger machine and several more over a period of 4-5 years til' I relocated to another place. I have referred several people over the years and will still confidently recommend their machines. I have also witnessed improvements and advancements technologically as years went by which is a sign they are a progressive entity and pay attention to customer needs and technological advancements in the field. Improvement in technology was also another motivation for acquiring more of their machines because it kept me competitive businesswise. I will recommend them anyway, anytime and from anywhere even in my sleep."),
+          "I have been a fan and user of Pro8 incubators since 2015. I started off my entrepreneurial journey with their machines initially with a small incubator that carried around 120 chicken eggs. With a boom in business I bought a bigger machine and several more over a period of 4-5 years til' I relocated. I have also witnessed improvements and advancements technologically as years went by which is a sign they are a progressive entity and pay attention to customer needs and technological advancements in the field. These improvements kept me competitive businesswise. I will recommend them anyway, anytime and from anywhere even in my sleep."),
   Testimonial(
       id: 2,
       name: "Thulani",
