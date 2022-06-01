@@ -39,6 +39,7 @@ dependencies:
   url_launcher: ^6.0.9
   scrollable_positioned_list: ^0.2.3
   yaru_widgets: ^1.0.12
+  fluttertoast: ^8.0.7
 
 dev_dependencies:
   flutter_test:

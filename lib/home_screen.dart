@@ -86,7 +86,7 @@ class SmallScreen extends StatelessWidget {
                   onTap: () {
                     Navigator.pop(context);
                     itemScrollController.scrollTo(
-                        index: 2, duration: Duration(seconds: 2));
+                        index: 1, duration: Duration(seconds: 2));
                   },
                 ),
                 ListTile(
@@ -100,35 +100,21 @@ class SmallScreen extends StatelessWidget {
                   onTap: () {
                     Navigator.pop(context);
                     itemScrollController.scrollTo(
+                        index: 2, duration: Duration(seconds: 1));
+                  },
+                ),
+                ListTile(
+                  title: Text(
+                    "Client Testimonials",
+                    style: GoogleFonts.nunito(
+                      fontWeight: FontWeight.w600,
+                      fontSize: 16,
+                    ),
+                  ),
+                  onTap: () {
+                    Navigator.pop(context);
+                    itemScrollController.scrollTo(
                         index: 3, duration: Duration(seconds: 1));
-                  },
-                ),
-                ListTile(
-                  title: Text(
-                    "News",
-                    style: GoogleFonts.nunito(
-                      fontWeight: FontWeight.w600,
-                      fontSize: 16,
-                    ),
-                  ),
-                  onTap: () {
-                    Navigator.pop(context);
-                    itemScrollController.scrollTo(
-                        index: 4, duration: Duration(seconds: 1));
-                  },
-                ),
-                ListTile(
-                  title: Text(
-                    "Events",
-                    style: GoogleFonts.nunito(
-                      fontWeight: FontWeight.w600,
-                      fontSize: 16,
-                    ),
-                  ),
-                  onTap: () {
-                    Navigator.pop(context);
-                    itemScrollController.scrollTo(
-                        index: 5, duration: Duration(seconds: 1));
                   },
                 ),
                 ListTile(
@@ -142,7 +128,7 @@ class SmallScreen extends StatelessWidget {
                   onTap: () {
                     Navigator.pop(context);
                     itemScrollController.scrollTo(
-                        index: 6, duration: Duration(seconds: 1));
+                        index: 5, duration: Duration(seconds: 1));
                   },
                 ),
               ],

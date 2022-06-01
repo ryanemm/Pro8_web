@@ -9,13 +9,13 @@ class MobileHeroSection extends StatelessWidget {
   Widget build(BuildContext context) {
     Size screen_size = MediaQuery.of(context).size;
     return Container(
-      height: screen_size.height * 0.6,
+      // height: screen_size.height * 0.6,
       decoration: BoxDecoration(
           image: DecorationImage(
               image: AssetImage("assets/images/header_2.jpg"),
               fit: BoxFit.cover)),
       child: Container(
-          padding: EdgeInsets.only(top: 100, bottom: 50, left: 50, right: 50),
+          padding: EdgeInsets.only(top: 100, bottom: 50, left: 40, right: 40),
           alignment: Alignment.center,
           color: Colors.black.withOpacity(0.7),
           child: Column(
@@ -33,7 +33,7 @@ class MobileHeroSection extends StatelessWidget {
               Text(
                 "Pro8 is at the forefront of agricultural technology, pioneering solutions in poultry, horticulture and commercial crop farming. Remote monitoring, process automation, data collection and analysis. We are increasing agricultural efficiency, productivity and ease of management.",
                 style: GoogleFonts.ubuntu(
-                  fontSize: 16,
+                  fontSize: 18,
                   fontWeight: FontWeight.w100,
                   color: Colors.white,
                 ),

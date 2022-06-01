@@ -42,26 +42,40 @@ class _LargeChild extends StatelessWidget {
                 SizedBox(height: 24),
                 Container(
                   width: MediaQuery.of(context).size.width * 0.4,
-                  child: RichText(
-                      text: TextSpan(
-                          style: GoogleFonts.ubuntu(
-                              fontSize: 18,
-                              height: 1.5,
-                              fontWeight: FontWeight.w100,
-                              color: Colors.white),
-                          children: [
-                        TextSpan(
-                          text: "Poultry: ",
-                          style: GoogleFonts.ubuntu(
-                              fontSize: 18,
-                              height: 1.5,
-                              fontWeight: FontWeight.w500,
-                              color: Colors.white),
-                        ),
-                        TextSpan(
-                            text:
-                                "Hybrid gas and battery powered poultry incubators. Automatic gas self-ignition system with SMS and call alerts for emergency cases.")
-                      ])),
+                  child: Column(
+                    children: [
+                      RichText(
+                          text: TextSpan(
+                              style: GoogleFonts.ubuntu(
+                                  fontSize: 18,
+                                  height: 1.5,
+                                  fontWeight: FontWeight.w100,
+                                  color: Colors.white),
+                              children: [
+                            TextSpan(
+                              text: "Poultry: ",
+                              style: GoogleFonts.ubuntu(
+                                  fontSize: 18,
+                                  height: 1.5,
+                                  fontWeight: FontWeight.w500,
+                                  color: Colors.white),
+                            ),
+                            TextSpan(
+                                text:
+                                    "Hybrid gas and battery powered poultry incubators. Automatic gas self-ignition system with SMS and call alerts for emergency cases.")
+                          ])),
+                      SizedBox(height: 24),
+                      Container(
+                        height: 300,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.all(Radius.circular(6)),
+                            image: DecorationImage(
+                                image:
+                                    AssetImage("assets/images/incubator.jpg"),
+                                fit: BoxFit.cover)),
+                      )
+                    ],
+                  ),
 
                   /*Text(
                     "Poultry:",
@@ -73,7 +87,7 @@ class _LargeChild extends StatelessWidget {
                     textAlign: TextAlign.justify,
                   ),*/
                 ),
-                SizedBox(height: 20),
+                SizedBox(height: 40),
                 Container(
                   width: MediaQuery.of(context).size.width * 0.4,
                   child: RichText(
@@ -103,7 +117,7 @@ class _LargeChild extends StatelessWidget {
           ),
           Container(
             child: SimpleButton(
-              text: "View Projects",
+              text: "Watch Demo",
               shadowColor: Colors.transparent,
               buttonColor2: Color.fromARGB(255, 3, 114, 105),
               buttonColor1: Color.fromARGB(255, 30, 235, 47),

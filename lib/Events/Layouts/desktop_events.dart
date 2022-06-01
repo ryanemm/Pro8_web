@@ -30,15 +30,7 @@ class DesktopEventsSection extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    "EVENTS",
-                    style: GoogleFonts.ubuntu(
-                        fontSize: 64,
-                        fontWeight: FontWeight.w700,
-                        color: Colors.white),
-                  ),
-                  SizedBox(height: 20),
-                  Text(
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra ex a felis ultrices, suscipit consectetur tellus volutpat. Vivamus convallis sodales elit, sit amet lacinia turpis venenatis nec. Nullam vel convallis orci. ",
+                    "Tell us about any challenges you face on your farm and we will come up with an efficient solution to increase your productivity and make your processes easier",
                     style: GoogleFonts.ubuntu(
                         fontSize: 18,
                         fontWeight: FontWeight.w100,
@@ -46,7 +38,7 @@ class DesktopEventsSection extends StatelessWidget {
                   ),
                   SizedBox(height: 16),
                   SimpleButton(
-                    text: "See all upcoming events",
+                    text: "Get in touch...",
                     shadowColor: Colors.transparent,
                     buttonColor2: Color.fromARGB(255, 3, 114, 105),
                     buttonColor1: Color.fromARGB(255, 30, 235, 47),

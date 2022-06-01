@@ -20,7 +20,7 @@ class _LargeChild extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: MediaQuery.of(context).size.height * 0.88,
+      height: MediaQuery.of(context).size.height,
       width: double.infinity,
       decoration: BoxDecoration(
           image: DecorationImage(
@@ -33,9 +33,9 @@ class _LargeChild extends StatelessWidget {
           top: 0,
           child: Container(
               padding:
-                  EdgeInsets.only(top: 150, bottom: 150, left: 100, right: 250),
+                  EdgeInsets.only(top: 150, bottom: 150, left: 150, right: 200),
               alignment: Alignment.center,
-              height: MediaQuery.of(context).size.height * 0.88,
+              height: MediaQuery.of(context).size.height,
               width: MediaQuery.of(context).size.width * 0.6,
               color: Colors.black.withOpacity(0.7),
               child: Column(

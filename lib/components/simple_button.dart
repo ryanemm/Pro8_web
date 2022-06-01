@@ -29,31 +29,33 @@ class SimpleButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      //width: 100,
-      padding: EdgeInsets.symmetric(vertical: 4, horizontal: padding),
-      decoration: BoxDecoration(
-        boxShadow: [
-          BoxShadow(
-              offset: Offset(offsetX, offsetY),
-              color: shadowColor,
-              blurRadius: 8,
-              spreadRadius: 0)
-        ],
-        gradient: LinearGradient(colors: [buttonColor1, buttonColor2]),
-        borderRadius: BorderRadius.circular(6),
-      ),
-      child: (TextButton(
-        child: Text(
-          text,
-          style: GoogleFonts.ubuntu(
-              fontSize: ftSize,
-              fontWeight: FontWeight.w400,
-              color: textColor,
-              letterSpacing: 1.0),
+    return GestureDetector(
+      child: Container(
+        //width: 100,
+        padding: EdgeInsets.symmetric(vertical: 4, horizontal: padding),
+        decoration: BoxDecoration(
+          boxShadow: [
+            BoxShadow(
+                offset: Offset(offsetX, offsetY),
+                color: shadowColor,
+                blurRadius: 8,
+                spreadRadius: 0)
+          ],
+          gradient: LinearGradient(colors: [buttonColor1, buttonColor2]),
+          borderRadius: BorderRadius.circular(6),
         ),
-        onPressed: () {},
-      )),
+        child: (TextButton(
+          child: Text(
+            text,
+            style: GoogleFonts.ubuntu(
+                fontSize: ftSize,
+                fontWeight: FontWeight.w400,
+                color: textColor,
+                letterSpacing: 1.0),
+          ),
+          onPressed: () {},
+        )),
+      ),
     );
   }
 }

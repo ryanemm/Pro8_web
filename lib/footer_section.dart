@@ -19,7 +19,7 @@ class Footer extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(
-              "© 2022 Pro8 Innovetics",
+              "© 2022 PRO8 INNOVETICS",
               style: GoogleFonts.ubuntu(
                   fontWeight: FontWeight.w300,
                   color: Colors.grey[300],
@@ -27,7 +27,7 @@ class Footer extends StatelessWidget {
             ),
             Image.asset("assets/images/PRIM_logo.png", height: 80),
             Text(
-              "All Rights Reserved",
+              "ALL RIGHTS RESERVED",
               style: GoogleFonts.ubuntu(
                   fontWeight: FontWeight.w300,
                   color: Colors.grey[300],
@@ -41,7 +41,7 @@ class Footer extends StatelessWidget {
         height: 60,
         padding: EdgeInsets.only(top: 15, bottom: 15, left: 20, right: 20),
         width: double.infinity,
-        color: Colors.grey[900],
+        color: Color.fromARGB(255, 31, 31, 32),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
