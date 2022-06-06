@@ -1,7 +1,9 @@
 import "package:flutter/material.dart";
 import 'package:google_fonts/google_fonts.dart';
+import 'package:pro8_tech/home_screen.dart';
+import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
-class SimpleButton extends StatelessWidget {
+class SimpleButton extends StatefulWidget {
   const SimpleButton({
     Key? key,
     this.text = "Button",
@@ -14,6 +16,9 @@ class SimpleButton extends StatelessWidget {
     this.shadowColor = Colors.blue,
     this.offsetX = 4,
     this.offsetY = 7,
+    // this.sectionIndex = 1,
+
+    // this.method = doSomething,
   }) : super(key: key);
 
   final String text;
@@ -26,36 +31,45 @@ class SimpleButton extends StatelessWidget {
   final Color shadowColor;
   final double offsetY;
   final double offsetX;
+  // final int sectionIndex;
+
+  @override
+  State<SimpleButton> createState() => _SimpleButtonState();
+}
+
+class _SimpleButtonState extends State<SimpleButton> {
+  // final Function method;
+  ItemScrollController scrollController = SmallScreen.itemScrollController;
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       child: Container(
         //width: 100,
-        padding: EdgeInsets.symmetric(vertical: 4, horizontal: padding),
+        padding: EdgeInsets.symmetric(vertical: 4, horizontal: widget.padding),
         decoration: BoxDecoration(
           boxShadow: [
             BoxShadow(
-                offset: Offset(offsetX, offsetY),
-                color: shadowColor,
+                offset: Offset(widget.offsetX, widget.offsetY),
+                color: widget.shadowColor,
                 blurRadius: 8,
                 spreadRadius: 0)
           ],
-          gradient: LinearGradient(colors: [buttonColor1, buttonColor2]),
+          gradient: LinearGradient(
+              colors: [widget.buttonColor1, widget.buttonColor2]),
           borderRadius: BorderRadius.circular(6),
         ),
-        child: (TextButton(
-          child: Text(
-            text,
-            style: GoogleFonts.ubuntu(
-                fontSize: ftSize,
-                fontWeight: FontWeight.w400,
-                color: textColor,
-                letterSpacing: 1.0),
-          ),
-          onPressed: () {},
+        child: (Text(
+          widget.text,
+          style: GoogleFonts.ubuntu(
+              fontSize: widget.ftSize,
+              fontWeight: FontWeight.w400,
+              color: widget.textColor,
+              letterSpacing: 1.0),
         )),
       ),
     );
   }
 }
+
+doSomething() {}

@@ -19,7 +19,7 @@ List<Testimonial> testimonials = [
       id: 1,
       name: "Cynthia",
       location: "Harare",
-      image: "assets/images/cynthia.jpeg",
+      image: "assets/images/cynthia.jpg",
       testimonialPreview:
           "I have been a fan and user of Pro8 incubators since 2015. I started off my entrepreneurial journey with their machines initially with a small incubator that carried around...",
       testimonialFull:
@@ -28,7 +28,7 @@ List<Testimonial> testimonials = [
       id: 2,
       name: "Thulani",
       location: "Mutare",
-      image: "assets/images/thulani.jpeg",
+      image: "assets/images/thulani.jpg",
       testimonialPreview:
           "The best decision i ever made since i started my poultry business is buying an incubator from Pro8 Innovetics. Most of the times i am far away from my project but perfect...",
       testimonialFull:

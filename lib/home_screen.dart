@@ -4,12 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:pro8_tech/Contact/contact_section.dart';
 import 'package:pro8_tech/Events/events_section.dart';
-import 'package:pro8_tech/Hero/Layouts/desktop_hero.dart';
-import 'package:pro8_tech/Hero/Layouts/desktop_hero.dart';
 import 'package:pro8_tech/Hero/hero_section.dart';
 import 'package:pro8_tech/Innovations/innovations_section.dart';
 import 'package:pro8_tech/Testimonials/testimonials_section.dart';
-import 'package:pro8_tech/Vision/vision_section.dart';
 import 'package:pro8_tech/Vision/vision_section.dart';
 import 'package:pro8_tech/WIdgets/navbar.dart';
 import 'package:pro8_tech/footer_section.dart';
@@ -73,8 +70,12 @@ class SmallScreen extends StatelessWidget {
               children: [
                 DrawerHeader(
                     decoration: BoxDecoration(color: Colors.grey[900]),
-                    padding: EdgeInsets.symmetric(vertical: 16, horizontal: 16),
-                    child: Image.asset("assets/images/PRIM_logo.png")),
+                    padding: EdgeInsets.symmetric(vertical: 16, horizontal: 6),
+                    child: Row(
+                      children: [
+                        Image.asset("assets/images/PRIM_logo.png"),
+                      ],
+                    )),
                 ListTile(
                   title: Text(
                     "Our Vision",
@@ -86,7 +87,7 @@ class SmallScreen extends StatelessWidget {
                   onTap: () {
                     Navigator.pop(context);
                     itemScrollController.scrollTo(
-                        index: 1, duration: Duration(seconds: 2));
+                        index: 1, duration: Duration(seconds: 1));
                   },
                 ),
                 ListTile(

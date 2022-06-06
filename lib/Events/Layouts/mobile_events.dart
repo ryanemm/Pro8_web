@@ -1,18 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:pro8_tech/components/simple_button.dart';
+import 'package:pro8_tech/home_screen.dart';
+import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
 class MobileEventsSection extends StatelessWidget {
   const MobileEventsSection({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    ItemScrollController scrollController = SmallScreen.itemScrollController;
     return Container(
       height: MediaQuery.of(context).size.height * 0.5,
       decoration: BoxDecoration(
           image: DecorationImage(
         fit: BoxFit.cover,
-        image: AssetImage("assets/images/field.jpg"),
+        image: AssetImage("assets/images/field_mobile.jpg"),
       )),
       child: Container(
           padding: EdgeInsets.only(top: 100, bottom: 50, left: 50, right: 50),
@@ -33,11 +36,19 @@ class MobileEventsSection extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               SizedBox(height: 20),
-              SimpleButton(
-                text: "Get in touch...",
-                shadowColor: Colors.transparent,
-                buttonColor2: Color.fromARGB(255, 3, 114, 105),
-                buttonColor1: Color.fromARGB(255, 30, 235, 47),
+              GestureDetector(
+                onTap: () {
+                  scrollController.scrollTo(
+                      index: 5,
+                      duration: Duration(seconds: 1),
+                      curve: Curves.easeInOutCubic);
+                },
+                child: SimpleButton(
+                  text: "Get in touch...",
+                  shadowColor: Colors.transparent,
+                  buttonColor2: Color.fromARGB(255, 3, 114, 105),
+                  buttonColor1: Color.fromARGB(255, 30, 235, 47),
+                ),
               )
             ],
           )),

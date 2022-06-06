@@ -40,14 +40,14 @@ class _DesktopTestimonialsSectionState
                   width: MediaQuery.of(context).size.width,
                   children: [
                     TestimonialDesktop(
-                      picture: "assets/images/cynthia.jpeg",
+                      picture: "assets/images/cynthia.jpg",
                       testimonial:
                           "My name is Cynthia Arumero. I have been a fan and user of Pro8 incubators since 2015. I started off my entrepreneurial journey with their machines starting off with a small incubator that carried around 120 chicken eggs. With a boom in business I bought another bigger machine and several more over a period of 4-5 years till I relocated to another place. At one point I had 4 if their machines using the smaller ones as hatchers. I have referred several people over the years and will still ",
                       name: "Cynthia,",
                       location: "Harare",
                     ),
                     TestimonialDesktop(
-                      picture: "assets/images/thulani.jpeg",
+                      picture: "assets/images/thulani.jpg",
                       testimonial:
                           "The best decision i ever made since i started my poultry business is buying an incubator from Pro8 Innovetics. Most of the times i am far away from my project but perfect automation gives me peace of mind knowing my machine gives me a return on investment.  What i really like about the machine is the seamlessly automatic changeover to gas back up system when mains power is lost and cellphone communication which keeps me in touch with my machine and projects.",
                       name: "Thulani,",

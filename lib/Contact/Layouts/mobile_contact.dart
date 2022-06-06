@@ -220,9 +220,36 @@ class _MobileContactSectionState extends State<MobileContactSection> {
                 ),
                 SizedBox(height: 16),
                 GestureDetector(
-                  onTap: (() => Fluttertoast.showToast(
-                      msg:
-                          "Thank you for your enquiry. We will get back to you within 24 hours.")),
+                  onTap: () {
+                    showDialog(
+                        context: context,
+                        builder: (BuildContext context) {
+                          return Dialog(
+                            elevation: 6,
+                            backgroundColor: Colors.white,
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(6)),
+                            child: Container(
+                              padding: EdgeInsets.all(14),
+                              height: 100,
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    "Thank you for getting in touch with us. We will respond to your query shortly.",
+                                    style: GoogleFonts.ubuntu(fontSize: 14),
+                                  ),
+                                  TextButton(
+                                      onPressed: () {
+                                        Navigator.of(context).pop();
+                                      },
+                                      child: Text("OK"))
+                                ],
+                              ),
+                            ),
+                          );
+                        });
+                  },
                   child: SimpleButton(
                     text: "Send",
                     shadowColor: Colors.grey.shade500,

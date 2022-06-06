@@ -1,18 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:pro8_tech/components/simple_button.dart';
+import 'package:pro8_tech/home_screen.dart';
+import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
 class MobileHeroSection extends StatelessWidget {
   const MobileHeroSection({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    ItemScrollController scrollController = SmallScreen.itemScrollController;
     Size screen_size = MediaQuery.of(context).size;
     return Container(
       // height: screen_size.height * 0.6,
       decoration: BoxDecoration(
           image: DecorationImage(
-              image: AssetImage("assets/images/header_2.jpg"),
+              image: AssetImage("assets/images/header_mobile.jpg"),
               fit: BoxFit.cover)),
       child: Container(
           padding: EdgeInsets.only(top: 100, bottom: 50, left: 40, right: 40),
@@ -40,11 +43,19 @@ class MobileHeroSection extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               SizedBox(height: 20),
-              SimpleButton(
-                text: "Learn More",
-                shadowColor: Colors.transparent,
-                buttonColor2: Color.fromARGB(255, 3, 114, 105),
-                buttonColor1: Color.fromARGB(255, 30, 235, 47),
+              GestureDetector(
+                onTap: () {
+                  scrollController.scrollTo(
+                      index: 1,
+                      duration: Duration(seconds: 1),
+                      curve: Curves.easeInOutCubic);
+                },
+                child: SimpleButton(
+                  text: "Learn More",
+                  shadowColor: Colors.transparent,
+                  buttonColor2: Color.fromARGB(255, 3, 114, 105),
+                  buttonColor1: Color.fromARGB(255, 30, 235, 47),
+                ),
               )
             ],
           )),
